@@ -1,0 +1,16 @@
+1  use the offical code to export object detection in concise format by:
+ python3 -m bdd_data.show_labels.py --image-dir bdd100k/images/100k/train \
+    -l bdd100k/labels/bdd100k_labels_images_train.json \
+    -s 1 -o bdd100k/out_drivable_maps/train --drivable
+ 
+ 2 use python2 convert_to_coco_format.py as follows
+ usage: convert_to_coco_format.py [-h] [--src SRC_PATH] [--dst DST_PATH]
+                                 [--dir IM_DIR]
+
+convert the file to coco format
+
+optional arguments:
+  -h, --help      show this help message and exit
+  --src SRC_PATH  /path/to/source
+  --dst DST_PATH  /path/to/save.json
+  --dir IM_DIR    /path/to/image/
