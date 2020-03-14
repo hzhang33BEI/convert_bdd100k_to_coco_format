@@ -1,10 +1,13 @@
-1  use the offical code to export object detection in concise format by:
+* 1  use the offical code to export object detection in concise format by:
+`
 python3 label2det.py bdd100k/labels/bdd100k_labels_images_train.json \
     bdd100k/detection_train.json 
+`
  2 use python2 convert_to_coco_format.py as follows
+ `
  usage: convert_to_coco_format.py [-h] [--src SRC_PATH] [--dst DST_PATH]
                                  [--dir IM_DIR]
-
+`
 convert the file to coco format
 
 optional arguments:
